@@ -92,9 +92,13 @@ body {
 
 @media only screen and (max-width: 767px) {
     .title {
+        h1 {
+            font-size: 3em;
+            text-align: center;
+        }
         p {
-            margin-left: 2%;
-            text-align: right;
+            font-size: 0.75em;
+            margin-left: 12%;
         }
     }
     nav {
