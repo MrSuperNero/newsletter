@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:wght@400;600;800&display=swap");
+@media only screen and (min-width: 1025px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  nav a {
+    width: 25%;
+  }
+
+  .slideshow .overlay p {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav a {
+    width: 100%;
+  }
+
+  .slideshow .overlay p {
+    font-size: 1em;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -20,27 +46,28 @@ p {
 
 .title {
   width: 100%;
-  padding: 5%;
+  padding: 3%;
 }
 .title h1 {
   padding-bottom: 2%;
-  font-size: 3em;
+  margin-left: 2%;
+  font-size: 4em;
 }
 .title hr {
   height: 3px;
   background-color: black;
 }
 .title nav {
-  width: 100%;
+  width: inherit;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .title nav a {
-  font-size: 1.3em;
-  padding: 0.5%;
+  font-size: 1em;
+  padding: 0.4%;
   text-decoration: none;
   color: black;
-  width: 25%;
   height: 2em;
   text-align: center;
   vertical-align: middle;
@@ -48,6 +75,42 @@ p {
 .title nav a:hover {
   cursor: pointer;
   background-color: whitesmoke;
+}
+
+.slideshow {
+  width: 100%;
+  position: relative;
+}
+.slideshow img {
+  width: 50%;
+}
+.slideshow #img-1 {
+  margin-left: 25%;
+  width: 100%;
+}
+.slideshow #img-1 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0.8%;
+  left: 25%;
+  right: 0;
+  width: 50%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: black;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(11, 11, 11, 0.3603816527) 41%, #161616 100%);
+  color: white;
+  z-index: 2;
+  opacity: 0;
+}
+.slideshow #img-1 .overlay:hover {
+  opacity: 1;
+}
+.slideshow #img-1 .overlay p {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */
