@@ -47,7 +47,6 @@ body {
 }
 .menu nav a {
   font-family: "Libre Franklin", sans-serif;
-  font-size: 1em;
   padding: 0.4%;
   text-decoration: none;
   color: black;
@@ -67,6 +66,7 @@ body {
   }
   nav a {
     width: 25%;
+    font-size: 1em;
   }
 
   .carousel {
@@ -83,13 +83,9 @@ body {
   }
 }
 @media only screen and (max-width: 767px) {
-  .title h1 {
-    font-size: 3em;
-    text-align: center;
-  }
   .title p {
     font-size: 0.75em;
-    margin-left: 12%;
+    margin-left: 20%;
   }
 
   nav {
@@ -99,6 +95,7 @@ body {
   }
   nav a {
     width: 100%;
+    font-size: 0.75em;
   }
 
   .carousel {
