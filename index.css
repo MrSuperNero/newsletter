@@ -1,34 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:wght@400;600;800&display=swap");
-@media only screen and (min-width: 1025px) {
-  nav {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  nav a {
-    width: 25%;
-  }
-
-  .slideshow .overlay p {
-    font-size: 2em;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  nav {
-    flex-direction: column;
-    justify-content: center;
-  }
-  nav a {
-    width: 100%;
-  }
-
-  .slideshow .overlay p {
-    font-size: 1em;
-  }
-}
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body {
@@ -48,7 +23,7 @@ p {
 
 .title {
   width: 100%;
-  padding: 3%;
+  padding: 3% 3% 1% 3%;
 }
 .title h1 {
   padding-bottom: 2%;
@@ -79,98 +54,118 @@ p {
   background-color: whitesmoke;
 }
 
-.slideshow {
-  width: 50%;
-  overflow: hidden;
+@media only screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  nav a {
+    width: 25%;
+  }
 }
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -35%);
+@media only screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav a {
+    width: 100%;
+  }
 }
-
-.slide-btns {
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  z-index: 5;
-}
-
-.circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid white;
-  margin: 8px;
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-.circle:hover {
-  background-color: white;
-}
-
-input[name=r] {
-  position: absolute;
-  visibility: hidden;
-}
-
-.slides {
-  width: 500%;
-  height: 100%;
-  display: flex;
-}
-
-.slide {
-  width: 20%;
-  transition: 0.6s ease;
-}
-.slide img {
-  width: 100%;
-  height: 100%;
-}
-
-#r1:checked ~ .s1 {
-  margin-left: 0;
-}
-
-#r2:checked ~ .s1 {
-  margin-left: -20%;
-}
-
-#r3:checked ~ .s1 {
-  margin-left: -40%;
-}
-
-#r4:checked ~ .s1 {
-  margin-left: -60%;
-}
-
-.overlay {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0;
-  transition: 0.5s ease;
+.carousel {
   background: black;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(11, 11, 11, 0.3603816527) 41%, #161616 100%);
-  color: white;
-  z-index: 2;
+  width: 100%;
+  height: 100%;
 }
-.overlay:hover {
+
+.carousel-cell {
+  width: 60%;
+  height: 600px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-filter: none;
+  filter: none;
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+
+.flickity-prev-next-button:hover {
+  background: transparent;
   opacity: 1;
 }
-.overlay p {
-  position: absolute;
-  bottom: 5%;
-  left: 2%;
-  font-family: "Libre Franklin", sans-serif;
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+
+/* closer to edge */
+.flickity-prev-next-button.previous {
+  left: 0;
+}
+
+.flickity-prev-next-button.next {
+  right: 0;
+}
+
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 10px;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
 }
 
 /*# sourceMappingURL=index.css.map */

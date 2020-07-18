@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <title>chpbttryfd</title>
-        <link rel="icon" type="img/png" href="assets/favicon-120.png">
-        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="icon" type="img/png" href="assets/favicon-120.png" />
+        <link rel="stylesheet" href="flickity.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
     </head>
 
     <body>
@@ -20,45 +21,21 @@
             <hr />
         </div>
 
-        <div class="slideshow middle">
-            <div class="slides">
-                <input type="radio" name="r" id="r1" checked>
-                <input type="radio" name="r" id="r2">
-                <input type="radio" name="r" id="r3">
-                <input type="radio" name="r" id="r4">
-                <div class="slide s1">
-                    <img src="assets/cape-town.jpeg" alt="Some food from Cape Town">
-                    <div class="overlay">
-                        <p>Some food from Cape Town</p>
-                    </div>
-                </div>
-                <div class="slide s2">
-                    <img src="assets/sushi.jpeg" alt="Some sushi">
-                    <div class="overlay">
-                        <p>Some sushi</p>
-                    </div>
-                </div>
-                <div class="slide s3">
-                    <img src="assets/burger.jpeg" alt="Some burgern">
-                    <div class="overlay">
-                        <p>Some burgers</p>
-                    </div>
-                </div>
-                <div class="slide s4">
-                    <img src="assets/fruits.jpeg" alt="Some fruits">
-                    <div class="overlay">
-                        <p>Some fruits</p>
-                    </div>
-                </div>
+        <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true, "freeScroll": true }'>
+            <div class="carousel-cell">
+                <img src="assets/cape-town.jpeg" alt="Some food from Cape Town">
             </div>
-
-            <div class="slide-btns">
-                <label for="r1" class="circle c1"></label>
-                <label for="r2" class="circle c2"></label>
-                <label for="r3" class="circle c3"></label>
-                <label for="r4" class="circle c4"></label>
+            <div class="carousel-cell">
+                <img src="assets/burger.jpeg" alt="Some burger">
+            </div>
+            <div class="carousel-cell">
+                <img src="assets/fruits.jpeg" alt="Some fruits">
+            </div>
+            <div class="carousel-cell">
+                <img src="assets/sushi.jpeg" alt="Some sushi">
             </div>
         </div>
         
+        <script src="flickity.pkgd.min.js"></script>
     </body>
 </html>
