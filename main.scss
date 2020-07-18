@@ -81,14 +81,14 @@ p {
 }
 
 .carousel {
-    background: black;
+    background: white;
     width: 100%;
     height: 100%;
 }
 
 .carousel-cell {
-    width: 60%;
-    height: 600px;
+    width: 70%;
+    height: 625px;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -97,7 +97,7 @@ p {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
-    
+
     img {
         display: block;
         max-width: 100%;
@@ -167,3 +167,10 @@ p {
   .flickity-page-dots .dot.is-selected {
     background: white;
   }
+
+footer {
+    font-family: "Libre Baskerville", serif;
+    padding: 0.72%;
+    font-size: 0.5em;
+    text-align: center;
+}
