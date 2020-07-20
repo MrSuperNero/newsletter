@@ -47,26 +47,55 @@ body {
 }
 .menu nav a {
   font-family: "Libre Franklin", sans-serif;
+  display: block;
   padding: 0.4%;
   text-decoration: none;
   color: black;
   height: 2em;
   text-align: center;
-  vertical-align: middle;
 }
 .menu nav a:hover {
   cursor: pointer;
-  background-color: whitesmoke;
+}
+.menu nav .bars {
+  background: black;
+  display: inline-block;
+  position: relative;
+  height: 2px;
+  width: 18px;
+}
+.menu nav .bars:before, .menu nav .bars:after {
+  content: "";
+  background: black;
+  display: inline-block;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+}
+.menu nav .bars:before {
+  top: 5px;
+  left: 0;
+}
+.menu nav .bars:after {
+  top: -5px;
+  left: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  nav {
+@media all and (min-width: 768px) {
+  .menu nav {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  nav a {
-    width: 25%;
+  .menu nav a {
     font-size: 1em;
+  }
+  .menu .item {
+    display: block;
+    width: auto;
+    order: 1;
+  }
+  .menu #toggle {
+    display: none;
   }
 
   .carousel {
@@ -82,29 +111,39 @@ body {
     bottom: 10px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
   .title p {
     font-size: 0.75em;
-    margin-left: 20%;
+    width: 100%;
+    text-align: center;
   }
 
-  nav {
+  .menu nav {
     margin-top: 1%;
     flex-direction: column;
     justify-content: center;
   }
-  nav a {
-    width: 100%;
+  .menu nav a {
     font-size: 0.75em;
+  }
+  .menu #toggle {
+    order: 1;
+    display: block;
+  }
+  .menu .item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
   }
 
   .carousel {
-    height: 200px;
+    height: 400px;
     width: 100%;
   }
 
   .carousel-cell {
-    height: 200px;
+    height: 400px;
   }
 
   .flickity-page-dots {
@@ -204,6 +243,10 @@ footer {
   padding: 1%;
   font-size: 0.5em;
   text-align: center;
+}
+
+.active {
+  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */

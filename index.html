@@ -7,8 +7,7 @@
         <link rel="icon" type="img/png" href="assets/favicon-120.png" />
         <link rel="stylesheet" href="flickity.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="index.css" />
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -18,38 +17,39 @@
         </div>
 
         <div class="menu" id="Menu">
-            <hr />
+            <!-- <hr /> -->
             <nav>
-                <a href="/">Home</a>
-                <a href="/">Recipes</a>
-                <a href="/">Subscribe</a>
-                <a href="/">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+                <a class="item" href="/">Home</a>
+                <a class="item" href="/">Recipes</a>
+                <a class="item" href="/">Subscribe</a>
+                <a class="item" href="/">About</a>
+                <a id="toggle" href="/"><span class="bars"></span></a>
             </nav>
-            <hr />
+            <!-- <hr /> -->
         </div>
 
-        <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true, "freeScroll": true }'>
-            <div class="carousel-cell">
-                <img src="assets/cape-town.jpeg" alt="Some food from Cape Town">
+        <main>
+            <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true, "freeScroll": true }'>
+                <div class="carousel-cell">
+                    <img src="assets/cape-town.jpeg" alt="Some food from Cape Town">
+                </div>
+                <div class="carousel-cell">
+                    <img src="assets/burger.jpeg" alt="Some burger">
+                </div>
+                <div class="carousel-cell">
+                    <img src="assets/fruits.jpeg" alt="Some fruits">
+                </div>
+                <div class="carousel-cell">
+                    <img src="assets/sushi.jpeg" alt="Some sushi">
+                </div>
             </div>
-            <div class="carousel-cell">
-                <img src="assets/burger.jpeg" alt="Some burger">
-            </div>
-            <div class="carousel-cell">
-                <img src="assets/fruits.jpeg" alt="Some fruits">
-            </div>
-            <div class="carousel-cell">
-                <img src="assets/sushi.jpeg" alt="Some sushi">
-            </div>
-        </div>
+        </main>
 
         <footer>
             *Images not indicative of food found on this website
         </footer>
         
         <script src="flickity.pkgd.min.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>

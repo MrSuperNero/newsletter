@@ -51,32 +51,66 @@ body {
     
         a {
             font-family: "Libre Franklin", sans-serif;
+            display: block;
             padding: 0.4%;
             text-decoration: none;
             color: black;
             height: 2em;
             text-align: center;
-            vertical-align: middle;
         
             &:hover {
                 cursor: pointer;
-                background-color: whitesmoke;
             }
         }
 
-        .icon {
-            display: none;
+        .bars {
+            background: black;
+            display: inline-block;
+            position: relative;
+            height: 2px;
+            width: 18px;
+
+            &:before, &:after {
+                content: '';
+                background: black;
+                display: inline-block;
+                height: 2px;
+                width: 18px;
+                position: absolute;
+            }
+
+            &:before {
+                top: 5px;
+                left: 0;
+            }
+
+            &:after {
+                top: -5px;
+                left: 0;
+            }
         }
     }
 }
 
-@media only screen and (min-width: 768px) {
-    nav {
-        flex-direction: row;
-        justify-content: space-evenly;
-        a {
-            width: 25%;
-            font-size: 1em;
+// desktop view
+@media all and (min-width: 768px) {
+    .menu {
+        nav {
+            flex-direction: row;
+            justify-content: space-evenly;
+            a {
+                font-size: 1em;
+            }
+        }
+
+        .item {
+            display: block;
+            width: auto;
+            order: 1;
+        }
+    
+        #toggle {
+            display: none;
         }
     }
 
@@ -94,30 +128,44 @@ body {
     }
 }
 
-@media only screen and (max-width: 767px) {
+// mobile view
+@media all and (max-width: 767px) {
     .title {
         p {
             font-size: 0.75em;
-            margin-left: 20%;
+            width: 100%;
+            text-align: center;
         }
     }
-    nav {
-        margin-top: 1%;
-        flex-direction: column;
-        justify-content: center;
-        a {
+
+    .menu {
+        nav {
+            margin-top: 1%;
+            flex-direction: column;
+            justify-content: center;
+            a {
+                font-size: 0.75em;
+            }
+        }
+        #toggle {
+            order: 1;
+            display: block;
+        }
+        .item {
             width: 100%;
-            font-size: 0.75em;
+            text-align: center;
+            order: 2;
+            display: none;
         }
     }
 
     .carousel {
-        height: 200px;
+        height: 400px;
         width: 100%;
     }
 
     .carousel-cell {
-        height: 200px;
+        height: 400px;
     }
 
     .flickity-page-dots {
@@ -210,4 +258,8 @@ footer {
     padding: 1%;
     font-size: 0.5em;
     text-align: center;
+}
+
+.active {
+    display: block;
 }
