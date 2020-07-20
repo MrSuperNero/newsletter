@@ -1,11 +1,9 @@
-let item = $(".item");
-
-$(function() {
+$(document).ready(function() {
     $(".toggle").on("click", function() {
-        if (item.hasClass("active")) {
-            item.removeClass("active");
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
         } else {
-            item.addClass("active");
+            $(".item").addClass("active");
         }
     });
 });
