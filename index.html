@@ -7,6 +7,8 @@
         <link rel="icon" type="img/png" href="assets/favicon-120.png" />
         <link rel="stylesheet" href="flickity.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="index.css" />
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -15,13 +17,16 @@
             <p>Forgive the domain, we couldn't afford the vowels</p>
         </div>
 
-        <div class="menu">
+        <div class="menu" id="Menu">
             <hr />
             <nav>
                 <a href="/">Home</a>
                 <a href="/">Recipes</a>
                 <a href="/">Subscribe</a>
                 <a href="/">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav>
             <hr />
         </div>
