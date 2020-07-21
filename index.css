@@ -131,7 +131,7 @@ body {
     order: 2;
   }
   .title p {
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 0.75em;
     width: 100%;
     text-align: right;
@@ -168,12 +168,12 @@ body {
   }
 
   .carousel {
-    height: 300px;
+    height: 250px;
     width: 100%;
   }
 
   .carousel-cell {
-    height: 300px;
+    height: 250px;
   }
 
   .flickity-page-dots {
@@ -270,7 +270,7 @@ body {
 
 footer {
   font-family: "Libre Franklin", sans-serif;
-  padding: 1%;
+  padding: 0.5%;
   font-size: 0.5em;
   text-align: center;
 }
