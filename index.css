@@ -47,15 +47,25 @@ body {
 }
 .menu nav a {
   font-family: "Libre Franklin", sans-serif;
-  display: block;
-  padding: 0.4%;
+  font-size: 1em;
+  padding: 1%;
   text-decoration: none;
   color: black;
-  height: 2em;
-  text-align: center;
 }
 .menu nav a:hover {
   cursor: pointer;
+}
+.menu nav #toggle {
+  cursor: pointer;
+  border: none;
+  background: white;
+  padding: 1%;
+}
+.menu nav #toggle:active {
+  background: transparent;
+}
+.menu nav #toggle:focus {
+  outline: none;
 }
 .menu nav .bars {
   background: black;
@@ -87,12 +97,14 @@ body {
     justify-content: space-evenly;
   }
   .menu nav a {
-    font-size: 1em;
-  }
-  .menu .item {
+    text-align: center;
     display: block;
     width: auto;
     order: 1;
+    display: block;
+  }
+  .menu nav a:active {
+    background-color: whitesmoke;
   }
   .menu #toggle {
     display: none;
@@ -118,23 +130,28 @@ body {
     text-align: center;
   }
 
+  .menu {
+    position: relative;
+    transition: all 0.5s ease;
+  }
   .menu nav {
     margin-top: 1%;
     flex-direction: column;
     justify-content: center;
   }
   .menu nav a {
-    font-size: 0.75em;
-  }
-  .menu #toggle {
-    order: 1;
-    display: block;
-  }
-  .menu .item {
+    margin-top: 2%;
     width: 100%;
     text-align: center;
     order: 2;
     display: none;
+    transition: all 0.3s ease;
+  }
+  .menu nav a:hover {
+    background-color: whitesmoke;
+  }
+  .menu #toggle {
+    order: 1;
   }
 
   .carousel {
@@ -243,10 +260,6 @@ footer {
   padding: 1%;
   font-size: 0.5em;
   text-align: center;
-}
-
-.active {
-  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */

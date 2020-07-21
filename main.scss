@@ -51,15 +51,28 @@ body {
     
         a {
             font-family: "Libre Franklin", sans-serif;
-            display: block;
-            padding: 0.4%;
+            font-size: 1em;
+            padding: 1%;
             text-decoration: none;
             color: black;
-            height: 2em;
-            text-align: center;
         
             &:hover {
                 cursor: pointer;
+            }
+        }
+
+        #toggle {
+            cursor: pointer;
+            border: none;
+            background: white;
+            padding: 1%;
+
+            &:active {
+                background: transparent;
+            }
+
+            &:focus {
+                outline: none;
             }
         }
 
@@ -99,14 +112,16 @@ body {
             flex-direction: row;
             justify-content: space-evenly;
             a {
-                font-size: 1em;
-            }
-        }
+                text-align: center;
+                display: block;
+                width: auto;
+                order: 1;
+                display: block;
 
-        .item {
-            display: block;
-            width: auto;
-            order: 1;
+                &:active {
+                    background-color: whitesmoke;
+                }
+            }
         }
     
         #toggle {
@@ -139,23 +154,30 @@ body {
     }
 
     .menu {
+        position: relative;
+        transition: all 0.5s ease;
+
         nav {
             margin-top: 1%;
             flex-direction: column;
             justify-content: center;
+
             a {
-                font-size: 0.75em;
+                margin-top: 2%;
+                width: 100%;
+                text-align: center;
+                order: 2;
+                display: none;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: whitesmoke;
+                }
             }
         }
+        
         #toggle {
             order: 1;
-            display: block;
-        }
-        .item {
-            width: 100%;
-            text-align: center;
-            order: 2;
-            display: none;
         }
     }
 
@@ -258,8 +280,4 @@ footer {
     padding: 1%;
     font-size: 0.5em;
     text-align: center;
-}
-
-.active {
-    display: block;
 }
