@@ -151,9 +151,10 @@ body {
         position: relative;
         order: 2;
         p {
+            margin-top: 10%;
             font-size: 0.75em;
             width: 100%;
-            text-align: center;
+            text-align: right;
         }
     }
 
@@ -192,12 +193,12 @@ body {
     }
 
     .carousel {
-        height: 400px;
+        height: 300px;
         width: 100%;
     }
 
     .carousel-cell {
-        height: 400px;
+        height: 300px;
     }
 
     .flickity-page-dots {

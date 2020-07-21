@@ -131,9 +131,10 @@ body {
     order: 2;
   }
   .title p {
+    margin-top: 10%;
     font-size: 0.75em;
     width: 100%;
-    text-align: center;
+    text-align: right;
   }
 
   .menu {
@@ -167,12 +168,12 @@ body {
   }
 
   .carousel {
-    height: 400px;
+    height: 300px;
     width: 100%;
   }
 
   .carousel-cell {
-    height: 400px;
+    height: 300px;
   }
 
   .flickity-page-dots {
