@@ -127,6 +127,7 @@ body {
 }
 @media all and (max-width: 767px) {
   .title {
+    padding-top: 1%;
     position: relative;
     order: 2;
   }
@@ -141,19 +142,25 @@ body {
     order: 1;
     position: relative;
     transition: all 0.5s ease;
+    padding-bottom: 0;
   }
   .menu nav {
-    margin-top: 1%;
+    margin-top: 2%;
+    margin-bottom: -1%;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
   }
   .menu nav a {
     margin-top: 2%;
     width: 100%;
-    text-align: center;
+    text-align: right;
     order: 2;
     display: none;
     transition: all 0.3s ease;
+  }
+  .menu nav a:nth-child(1) {
+    margin-top: 5%;
   }
   .menu nav a:hover {
     background-color: whitesmoke;
