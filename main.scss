@@ -8,6 +8,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -146,6 +148,8 @@ body {
 // mobile view
 @media all and (max-width: 767px) {
     .title {
+        position: relative;
+        order: 2;
         p {
             font-size: 0.75em;
             width: 100%;
@@ -154,6 +158,7 @@ body {
     }
 
     .menu {
+        order: 1;
         position: relative;
         transition: all 0.5s ease;
 
@@ -179,6 +184,11 @@ body {
         #toggle {
             order: 1;
         }
+    }
+
+    main {
+        position: relative;
+        order: 3;
     }
 
     .carousel {
