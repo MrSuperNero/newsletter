@@ -94,13 +94,14 @@ main p {
   font-size: 0.3em;
   text-align: center;
   margin: 10px 0;
+  padding: 1%;
 }
 main section {
   background: var(--bkg-yellow);
 }
 main section h2 {
   text-align: center;
-  padding: 1% 0;
+  padding: 3% 0;
   font-size: 3em;
   z-index: 10;
 }

@@ -1,0 +1,26 @@
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper {
+  width: 50%;
+  height: 100vh;
+}
+.img-wrapper img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.info {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=recipe-page.css.map */
