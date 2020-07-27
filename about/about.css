@@ -226,14 +226,35 @@ main {
 
 .content {
   width: 80%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .content h2 {
   text-align: center;
+  padding: 5% 0;
+}
+.content #penultimate {
+  width: 70%;
+}
+.content .salutations {
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+.content .salutations #signoff {
+  font-size: 1.4em;
+}
+.content .salutations .identity #signature {
+  width: 200px;
+  height: auto;
+}
+.content .salutations .identity #name {
+  font-size: 1.8em;
+}
+.content .salutations .identity #subname {
+  font-size: 1.1em;
 }
 
 /*# sourceMappingURL=about.css.map */
