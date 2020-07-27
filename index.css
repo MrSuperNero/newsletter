@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,19 @@ body {
   background-color: white;
   color: black;
   line-height: 1.6;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+p {
+  font-size: 1em;
 }
 
 .title {
@@ -24,11 +36,7 @@ body {
   flex-flow: row wrap;
   align-items: flex-end;
 }
-.title h1 {
-  font-size: 4em;
-}
 .title p {
-  font-size: 1em;
   margin-left: 1%;
   margin-bottom: 1.6%;
 }
@@ -54,7 +62,7 @@ body {
   align-items: center;
 }
 .menu nav a {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   padding: 1%;
   text-decoration: none;
@@ -109,15 +117,15 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
-footer .info img {
+footer .foot-info img {
   width: 50px;
   float: left;
   margin-right: 10px;
 }
-footer .info .text {
+footer .foot-info .text {
   float: right;
 }
-footer .info .text .small {
+footer .foot-info .text .small {
   font-size: 0.5em;
 }
 footer .links {
@@ -127,7 +135,7 @@ footer .links {
 footer .links a {
   text-decoration: none;
   color: white;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 7px;
 }
 
@@ -162,7 +170,6 @@ footer .links a {
   }
   .title p {
     margin-top: 5%;
-    font-size: 0.75em;
     width: 100%;
     text-align: right;
   }

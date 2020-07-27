@@ -1,3 +1,10 @@
+@import '../main';
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 main {
     display: flex;
     flex-flow: row wrap;
@@ -5,9 +12,18 @@ main {
     align-items: center;
 }
 
+h2 {
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
 .img-wrapper {
-    width: 50%;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
         height: 100%;
@@ -17,9 +33,56 @@ main {
 }
 
 .info {
-    width: 50%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    background-color: #4fb9e2;
+
+    .info-text {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 5%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        .cook-stats {
+            .metadata {
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+// desktop/tablet
+@media all and (min-width: 1024px) {
+    main {
+        height: 100vh;
+        width: 100vw;
+    }
+    .img-wrapper {
+        width: 50%;
+        height: 100%;
+    }
+    .info {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+// mobile
+@media all and (max-width: 1023px) {
+    main {
+        height: 100%;
+        width: 100%;
+    }
+    .img-wrapper {
+        width: 100vw;
+        height: 600px;
+    }
+    .info {
+        width: 767px;
+        height: auto;
+    }
 }

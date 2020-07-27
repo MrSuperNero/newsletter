@@ -1,3 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.title {
+  width: 100%;
+  padding: 1% 3%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
+.title p {
+  margin-left: 1%;
+  margin-bottom: 1.6%;
+}
+
+.content {
+  min-height: 800px;
+  width: 100%;
+  padding: 1% 3%;
+}
+
+.menu {
+  width: 100%;
+  padding: 0 3% 1% 3%;
+}
+.menu hr {
+  height: 3px;
+  background-color: black;
+}
+.menu nav {
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu nav a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  padding: 1%;
+  text-decoration: none;
+  color: black;
+}
+.menu nav a:hover {
+  cursor: pointer;
+}
+.menu nav #toggle {
+  cursor: pointer;
+  border: none;
+  background: white;
+  padding: 1%;
+}
+.menu nav #toggle:active {
+  background: transparent;
+}
+.menu nav #toggle:focus {
+  outline: none;
+}
+.menu nav .bars {
+  background: black;
+  display: inline-block;
+  position: relative;
+  height: 2px;
+  width: 18px;
+}
+.menu nav .bars:before, .menu nav .bars:after {
+  content: "";
+  background: black;
+  display: inline-block;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+}
+.menu nav .bars:before {
+  top: 5px;
+  left: 0;
+}
+.menu nav .bars:after {
+  top: -5px;
+  left: 0;
+}
+
+footer {
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .foot-info img {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+footer .foot-info .text {
+  float: right;
+}
+footer .foot-info .text .small {
+  font-size: 0.5em;
+}
+footer .links {
+  display: flex;
+  flex-direction: column;
+}
+footer .links a {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 7px;
+}
+
+@media all and (min-width: 768px) {
+  .menu nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .menu nav a {
+    text-align: center;
+    display: block;
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .menu nav a:active {
+    background-color: whitesmoke;
+  }
+  .menu #toggle {
+    display: none;
+  }
+
+  footer .info img {
+    margin-top: -20px;
+  }
+}
+@media all and (max-width: 767px) {
+  .title {
+    padding-top: 1%;
+    position: relative;
+    order: 2;
+  }
+  .title p {
+    margin-top: 5%;
+    width: 100%;
+    text-align: right;
+  }
+
+  .menu {
+    order: 1;
+    position: relative;
+    transition: all 0.5s ease;
+    padding-bottom: 0;
+  }
+  .menu nav {
+    margin-top: 2%;
+    margin-bottom: -1%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .menu nav a {
+    margin-top: 2%;
+    width: 100%;
+    text-align: right;
+    order: 2;
+    display: none;
+    transition: all 0.3s ease;
+  }
+  .menu nav a:nth-child(1) {
+    margin-top: 5%;
+  }
+  .menu nav a:hover {
+    background-color: whitesmoke;
+  }
+  .menu #toggle {
+    order: 1;
+  }
+
+  main {
+    position: relative;
+    order: 3;
+  }
+
+  footer {
+    position: relative;
+    order: 4;
+  }
+  footer .info img {
+    margin-top: 0px;
+  }
+}
 main p {
   font-size: 0.3em;
   text-align: center;

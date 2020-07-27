@@ -90,11 +90,15 @@
   background: white;
 }
 
-main p {
+main #caption {
   font-size: 0.3em;
   text-align: center;
   margin: 10px 0;
   padding: 1%;
+}
+main p {
+  font-size: 1.3em;
+  padding: 5%;
 }
 main section {
   background: var(--bkg-yellow);
@@ -118,15 +122,12 @@ main section .recipes .recipe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 7%;
+  padding: 0 3%;
 }
 main section .recipes .recipe img {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   object-fit: cover;
-}
-main section .recipes .recipe p {
-  font-size: 1.2em;
 }
 
 @media all and (min-width: 768px) {
