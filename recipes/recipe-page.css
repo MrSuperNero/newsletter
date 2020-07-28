@@ -230,10 +230,6 @@ main {
   align-items: center;
 }
 
-h2 {
-  font-size: 3.5em;
-}
-
 p {
   font-size: 1.3em;
 }
@@ -244,8 +240,6 @@ p {
   align-items: center;
 }
 .img-wrapper img {
-  height: 100%;
-  width: auto;
   object-fit: contain;
 }
 
@@ -271,7 +265,6 @@ p {
   align-items: flex-start;
 }
 .info .info-text .metadata .pod {
-  width: 30%;
   padding: 2%;
   display: flex;
   flex-flow: row nowrap;
@@ -290,14 +283,25 @@ p {
     width: 100vw;
   }
 
+  h2 {
+    font-size: 3.5em;
+  }
+
   .img-wrapper {
     width: 50%;
     height: 100%;
+  }
+  .img-wrapper img {
+    height: 100%;
+    width: auto;
   }
 
   .info {
     width: 50%;
     height: 100%;
+  }
+  .info .info-text .metadata {
+    width: 30%;
   }
 }
 @media all and (max-width: 1023px) {
@@ -306,14 +310,29 @@ p {
     width: 100%;
   }
 
+  h2 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
   .img-wrapper {
     width: 100vw;
     height: 600px;
+  }
+  .img-wrapper img {
+    height: auto;
+    max-height: 600px;
+    width: 100%;
   }
 
   .info {
     width: 100%;
     height: auto;
+    padding: 30px 0;
+  }
+  .info .info-text .metadata {
+    width: 100%;
+    padding: 15px 0 30px 0;
   }
 }
 

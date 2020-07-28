@@ -218,5 +218,8 @@ footer .links a {
     margin-top: 0px;
   }
 }
+.content h2 {
+  font-size: 2em;
+}
 
 /*# sourceMappingURL=faq.css.map */
