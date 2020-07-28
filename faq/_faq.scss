@@ -1,7 +1,21 @@
 @import '../main';
 
 .content {
-    h2 {
-        font-size: 2em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .qa {
+        padding: 50px 0;
+        border-top: 3px solid #f0f0f0;
+        h3 {
+            font-size: 1.3em;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
     }
 }
