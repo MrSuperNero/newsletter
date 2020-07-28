@@ -30,16 +30,41 @@ main {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 2% 7%;
+                padding: 2% .7em;
 
                 img {
-                    height: 300px;
-                    width: 300px;
+                    height: 400px;
                     object-fit: cover;
                 }
 
                 p {
                     font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+// desktops/tablets
+@media all and (min-width: 1025px) {
+    section {
+        .recipes {
+            .recipe {
+                img {
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}
+
+//mobile
+@media all and (max-width: 1024px) {
+    section {
+        .recipes {
+            .recipe {
+                img {
+                    width: 90vw;
                 }
             }
         }

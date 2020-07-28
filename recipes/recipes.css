@@ -33,8 +33,10 @@ p {
   width: 100%;
   padding: 1% 3%;
   display: flex;
-  flex-flow: row wrap;
-  align-items: flex-end;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .title p {
   margin-left: 1%;
@@ -171,7 +173,6 @@ footer .links a {
   .title p {
     margin-top: 5%;
     width: 100%;
-    text-align: right;
   }
 
   .menu {
@@ -246,15 +247,25 @@ main section .recipes .recipe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2% 7%;
+  padding: 2% 0.7em;
 }
 main section .recipes .recipe img {
-  height: 300px;
-  width: 300px;
+  height: 400px;
   object-fit: cover;
 }
 main section .recipes .recipe p {
   font-size: 1.2em;
+}
+
+@media all and (min-width: 1025px) {
+  section .recipes .recipe img {
+    width: 30vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  section .recipes .recipe img {
+    width: 90vw;
+  }
 }
 
 /*# sourceMappingURL=recipes.css.map */
