@@ -129,7 +129,7 @@ footer {
     padding: 2%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
     .foot-info {
@@ -149,13 +149,18 @@ footer {
 
     .links {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
-        a {
-            text-decoration: none;
-            color: white;
-            font-family: "Open Sans", sans-serif;
-            padding: 7px;
+        .links-group {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Open Sans", sans-serif;
+                padding: 7px;
+            }
         }
     }
 }
