@@ -126,10 +126,10 @@ footer {
     background: black;
     color: white;
     width: 100%;
-    padding: 2%;
+    padding: 1% 10%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     .foot-info {
@@ -190,9 +190,17 @@ footer {
     }
     
     footer {
-        .info {
+        .foot-info {
             img {
                 margin-top: -20px;
+            }
+        }
+
+        .links {
+            margin-left: 50%;
+
+            .links-group {
+                padding-left: 20%;
             }
         }
     }
@@ -255,9 +263,21 @@ footer {
         position: relative;
         order: 4;
 
-        .info {
+        .foot-info {
             img {
                 margin-top: 0px;
+            }
+        }
+
+        .links {
+            width: 100%;
+            margin: 0;
+
+            .links-group {
+                margin: 0 auto;
+                &:nth-child(2) {
+                    margin-left: 30%;
+                }
             }
         }
     }

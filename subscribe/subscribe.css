@@ -116,7 +116,7 @@ footer {
   padding: 2%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 footer .foot-info img {
@@ -132,9 +132,14 @@ footer .foot-info .text .small {
 }
 footer .links {
   display: flex;
+  flex-direction: row;
+  margin-left: 50%;
+}
+footer .links .links-group {
+  display: flex;
   flex-direction: column;
 }
-footer .links a {
+footer .links .links-group a {
   text-decoration: none;
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -232,12 +237,13 @@ main h2 {
   margin-top: 30px;
 }
 main form {
+  background: #f3ef7d;
   display: flex;
   flex-flow: column nowrap;
   width: 80%;
   padding-bottom: 40px;
   margin-top: 0;
-  padding-top: 0;
+  padding: 0 60px;
 }
 main form input {
   padding: 10px;
@@ -265,7 +271,7 @@ main form .birthday #year {
   width: 35%;
 }
 main form button {
-  background-color: white;
+  background-color: #f3ef7d;
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;

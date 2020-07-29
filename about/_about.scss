@@ -7,7 +7,7 @@ main {
 }
 
 .content {
-    width: 80%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -23,28 +23,13 @@ main {
         margin-top: 5%;
         padding-bottom: 5%;
 
-        #signoff {
-            font-size: 1.4em;
-        }
-
-        
-
         .identity {
             #signature {
                 width: 200px;
                 height: auto;
             }
-            // #photoID {
-            //     height: 8em;
-            //     width: auto;
-            //     float: left;
-            //     padding-right: 3%;
-            // }
             #name {
                 font-size: 1.8em;
-            }
-            #subname {
-                font-size: 1.1em;
             }
         }
     }

@@ -14,12 +14,13 @@ main {
     }
 
     form {
+        background: #f3ef7d;
         display: flex;
         flex-flow: column nowrap;
         width: 80%;
         padding-bottom: 40px;
         margin-top: 0;
-        padding-top: 0;
+        padding: 0 60px;
     
         input {
             padding: 10px;
@@ -53,7 +54,7 @@ main {
         }
     
         button {
-            background-color: white;
+            background-color: #f3ef7d;
             color: black;
             font-family: 'Open Sans', sans-serif;
             font-weight: 800;
