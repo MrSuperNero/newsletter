@@ -18,12 +18,46 @@
     100%{background-position:0% 50%}
 }
 
+@-webkit-keyframes wave {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-50px);}
+    100%{transform: translateY(0px);}
+}
+@-moz-keyframes wave {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-50px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes wave {
+    0%, 100% {transform: translateY(0px);}
+    50%{transform: translateY(-50px);}
+    100%{transform: translateY(0px);}
+}
+
 body {
     background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
     background-size: 1000% 1000%;
     -webkit-animation: backgroundChange 15s ease infinite;
     -moz-animation: backgroundChange 15s ease infinite;
     animation: backgroundChange 15s ease infinite;
+}
+
+.textWave {
+    position: relative;
+
+    span {
+        background: linear-gradient(270deg, #ec1c88, #67ec1c, #f3ef7d, #ecc31c, #1cecc0);
+        background-size: 1000% 1000%;
+        -webkit-animation: backgroundChange 7s ease infinite;
+        -moz-animation: backgroundChange 7s ease infinite;
+        animation: backgroundChange 7s ease infinite;
+        display: inline-block;
+        -webkit-animation: wave 2s ease-in-out infinite;
+        -moz-animation: wave 2s ease-in-out infinite;
+        animation: wave 2s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+        padding: 0 20px;
+    }
 }
 
 main {
