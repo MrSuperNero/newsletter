@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&family=Press+Start+2P&family=Ranchers&family=Shadows+Into+Light&family=Suwannaphum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&family=Press+Start+2P&family=Ranchers&family=Shadows+Into+Light&display=swap");
 @keyframes textRotate {
   0% {
     transform: rotate(0deg);
@@ -157,7 +157,7 @@
     font-size: 1.3em;
   }
   50% {
-    font-size: 3.1em;
+    font-size: 2.5em;
   }
   100% {
     font-size: 1.3em;
@@ -168,7 +168,7 @@
     font-size: 1.3em;
   }
   50% {
-    font-size: 3.1em;
+    font-size: 2.5em;
   }
   100% {
     font-size: 1.3em;
@@ -179,7 +179,7 @@
     font-size: 1.3em;
   }
   50% {
-    font-size: 3.1em;
+    font-size: 2.5em;
   }
   100% {
     font-size: 1.3em;
@@ -291,6 +291,26 @@ p {
 
 .bounce {
   animation: bounce 2s infinite;
+}
+
+.ranchers {
+  font-family: "Ranchers", cursive;
+  font-size: 1.8em;
+  transform: rotate(-15deg);
+}
+
+.player {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5em;
+}
+
+.pacifico {
+  font-family: "Pacifico", cursive;
+}
+
+.shadow {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 0.8em;
 }
 
 .info {
