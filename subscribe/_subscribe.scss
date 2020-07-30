@@ -1,6 +1,29 @@
 @import '../main';
 
+
+// https://www.gradient-animator.com/ for background color change
+@-webkit-keyframes backgroundChange {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes backgroundChange {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes backgroundChange {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 main {
+    background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
+    background-size: 1000% 1000%;
+    -webkit-animation: backgroundChange 15s ease infinite;
+    -moz-animation: backgroundChange 15s ease infinite;
+    animation: backgroundChange 15s ease infinite;
     height: auto;
     width: 100vw;
     display: flex;
@@ -10,17 +33,16 @@ main {
 
     h2 {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 50px;
+        padding: 10px 0;
     }
 
     form {
-        background: #f3ef7d;
         display: flex;
         flex-flow: column nowrap;
         width: 80%;
-        padding-bottom: 40px;
         margin-top: 0;
-        padding: 0 60px;
+        padding: 0 75px 50px 75px;
     
         input {
             padding: 10px;
@@ -30,6 +52,7 @@ main {
     
         label {
             margin-top: 5%;
+            font-weight: 600;
         }
     
         .name, .birthday{
@@ -54,7 +77,8 @@ main {
         }
     
         button {
-            background-color: #f3ef7d;
+            background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
+            background-size: 1000% 1000%;
             color: black;
             font-family: 'Open Sans', sans-serif;
             font-weight: 800;

@@ -113,7 +113,7 @@ footer {
   background: black;
   color: white;
   width: 100%;
-  padding: 2%;
+  padding: 1% 10%;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -133,20 +133,21 @@ footer .foot-info .text .small {
 footer .links {
   display: flex;
   flex-direction: row;
-  margin-left: 50%;
 }
 footer .links .links-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 150px;
 }
 footer .links .links-group a {
   text-decoration: none;
   color: white;
   font-family: "Open Sans", sans-serif;
-  padding: 7px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1025px) {
   .menu nav {
     flex-direction: row;
     justify-content: space-evenly;
@@ -165,11 +166,14 @@ footer .links .links-group a {
     display: none;
   }
 
-  footer .info img {
+  footer .foot-info img {
     margin-top: -20px;
   }
+  footer .links {
+    margin-left: 50%;
+  }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 1024px) {
   .title {
     padding-top: 1%;
     position: relative;
@@ -220,11 +224,56 @@ footer .links .links-group a {
     position: relative;
     order: 4;
   }
-  footer .info img {
+  footer .foot-info img {
     margin-top: 0px;
+  }
+  footer .links {
+    width: 100%;
+    margin: 0;
+  }
+  footer .links .links-group {
+    margin: 0 auto;
+  }
+}
+@-webkit-keyframes backgroundChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes backgroundChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes backgroundChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 main {
+  background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
+  background-size: 1000% 1000%;
+  -webkit-animation: backgroundChange 15s ease infinite;
+  -moz-animation: backgroundChange 15s ease infinite;
+  animation: backgroundChange 15s ease infinite;
   height: auto;
   width: 100vw;
   display: flex;
@@ -234,16 +283,15 @@ main {
 }
 main h2 {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
+  padding: 10px 0;
 }
 main form {
-  background: #f3ef7d;
   display: flex;
   flex-flow: column nowrap;
   width: 80%;
-  padding-bottom: 40px;
   margin-top: 0;
-  padding: 0 60px;
+  padding: 0 75px 50px 75px;
 }
 main form input {
   padding: 10px;
@@ -252,6 +300,7 @@ main form input {
 }
 main form label {
   margin-top: 5%;
+  font-weight: 600;
 }
 main form .name, main form .birthday {
   display: flex;
@@ -271,7 +320,8 @@ main form .birthday #year {
   width: 35%;
 }
 main form button {
-  background-color: #f3ef7d;
+  background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
+  background-size: 1000% 1000%;
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
