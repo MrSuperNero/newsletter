@@ -268,12 +268,15 @@ footer .links .links-group a {
     background-position: 0% 50%;
   }
 }
-main {
+body {
   background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
   background-size: 1000% 1000%;
   -webkit-animation: backgroundChange 15s ease infinite;
   -moz-animation: backgroundChange 15s ease infinite;
   animation: backgroundChange 15s ease infinite;
+}
+
+main {
   height: auto;
   width: 100vw;
   display: flex;
@@ -319,7 +322,7 @@ main form .birthday #year {
   width: 35%;
 }
 main form button {
-  background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
+  background: linear-gradient(90deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
   background-size: 1000% 1000%;
   -webkit-animation: backgroundChange 15s ease infinite;
   -moz-animation: backgroundChange 15s ease infinite;
@@ -332,6 +335,10 @@ main form button {
   border: none;
   border-radius: 5px;
   transition: all ease 0.3s;
+  cursor: pointer;
+}
+main form button:focus {
+  outline: none;
 }
 
 @media all and (min-width: 1025px) {
@@ -345,21 +352,18 @@ main form button {
     width: 49%;
   }
   main form button {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
   main form button:hover {
-    color: #f84040;
+    color: #e72f2f;
     transform: scale(1.1);
   }
   main form button:hover:before {
     top: 0;
   }
   main form button:active {
-    color: #e63737;
+    color: #d12020;
     transform: scale(0.9);
-  }
-  main form button:focus {
-    outline: none;
   }
   main form button:before {
     content: "";

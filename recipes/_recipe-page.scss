@@ -1,4 +1,110 @@
-@import '../main';
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&family=Press+Start+2P&family=Ranchers&family=Shadows+Into+Light&family=Suwannaphum&display=swap');
+
+@keyframes textRotate {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(20deg);}
+    50% { transform: rotate(100deg);}
+    75% { transform: rotate(200deg);}
+    100% { transform: rotate(3600deg);}
+}
+
+@-webkit-keyframes textRotate {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(20deg);}
+    50% { transform: rotate(100deg);}
+    75% { transform: rotate(200deg);}
+    100% { transform: rotate(3600deg);}
+}
+
+@-moz-keyframes textRotate {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(20deg);}
+    50% { transform: rotate(100deg);}
+    75% { transform: rotate(200deg);}
+    100% { transform: rotate(3600deg);}
+}
+
+@keyframes textSkew {
+    0% { transform: skew(0deg, 0deg);}
+    33% { transform: skew(15deg, 15deg);}
+    66% { transform: skew(-10deg, -30deg);}
+    100% { transform: rotate(0deg, 0deg);}
+}
+
+@-webkit-keyframes textSkew {
+    0% { transform: skew(0deg, 0deg);}
+    33% { transform: skew(15deg, 15deg);}
+    66% { transform: skew(-10deg, -30deg);}
+    100% { transform: rotate(0deg, 0deg);}
+}
+
+@-moz-keyframes textSkew {
+    0% { transform: skew(0deg, 0deg);}
+    33% { transform: skew(15deg, 15deg);}
+    66% { transform: skew(-10deg, -30deg);}
+    100% { transform: rotate(0deg, 0deg);}
+}
+
+@keyframes textMove {
+    0% { transform: translate(0px, 0px);}
+    20% { transform: translate(10px, 20px);}
+    40% { transform: translate(-30px, 40px);}
+    60% { transform: translate(60px, -70px);}
+    80% { transform: translate(-100px, -120px);}
+    100% { transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes textMove {
+    0% { transform: translate(0px, 0px);}
+    20% { transform: translate(10px, 20px);}
+    40% { transform: translate(-30px, 40px);}
+    60% { transform: translate(60px, -70px);}
+    80% { transform: translate(-100px, -120px);}
+    100% { transform: translate(0px, 0px);}
+}
+
+@-moz-keyframes textMove {
+    0% { transform: translate(0px, 0px);}
+    20% { transform: translate(10px, 20px);}
+    40% { transform: translate(-30px, 40px);}
+    60% { transform: translate(60px, -70px);}
+    80% { transform: translate(-100px, -120px);}
+    100% { transform: translate(0px, 0px);}
+}
+
+@keyframes textGrowth {
+    0% { font-size: 1.3em;}
+    50% { font-size: 3.1em;}
+    100% { font-size: 1.3em;}
+}
+
+@-webkit-keyframes textGrowth {
+    0% { font-size: 1.3em;}
+    50% { font-size: 3.1em;}
+    100% { font-size: 1.3em;}
+}
+
+@-moz-keyframes textGrowth {
+    0% { font-size: 1.3em;}
+    50% { font-size: 3.1em;}
+    100% { font-size: 1.3em;}
+}
+
+@-webkit-keyframes textRainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes textRainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes textRainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
 body {
     display: flex;
@@ -24,6 +130,58 @@ p {
     img {
         object-fit: contain;
     }
+}
+
+.textMove {
+    animation: textMove 4s ease infinite;
+    -moz-animation: textMove 4s ease infinite;
+    -webkit-animation: textMove 4s ease infinite;
+
+    &:nth-child(even) {
+        animation-delay: 2s;
+    }
+}
+
+.textRotate  {
+    animation: textRotate 3s ease infinite;
+    -moz-animation: textRotate 3s ease infinite;
+    -webkit-animation: textRotate 3s ease infinite;
+
+    &:nth-child(odd) {
+        animation-delay: 0.7s;
+    }
+}
+
+.growth {
+    animation: textGrowth 3s ease infinite;
+    -webkit-animation: textGrowth 3s ease infinite;
+    -moz-animation: textGrowth 3s ease infinite;
+}
+
+.rainbow {
+    background: linear-gradient(270deg, #d92525, #d9ad25, #deec21, #6aec21, #25b6d7, #2538d7, #9f25d7, #d72591);
+    background-size: 1600% 1600%;
+    -webkit-animation: textRainbow 5s ease infinite;
+    -moz-animation: textRainbow 5s ease infinite;
+    animation: textRainbow 5s ease infinite;
+}
+
+#circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: black;
+    border: 10px solid black;
+}
+
+.skew {
+    -webkit-animation: textSkew 7s ease-out infinite;
+    -moz-animation: textSkew 7s ease-out infinite;
+    animation: textSkew 7s ease-out infinite;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
 }
 
 .info {
@@ -60,6 +218,15 @@ p {
                 p {
                     font-size: 0.9em;
                 }
+            }
+        }
+
+        .macfunky {
+            font-family: 'Bangers', cursive;
+            background: orange;
+
+            &:nth-child(odd) {
+                font-size: 2em;
             }
         }
 

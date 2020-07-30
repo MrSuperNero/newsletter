@@ -18,12 +18,15 @@
     100%{background-position:0% 50%}
 }
 
-main {
+body {
     background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
     background-size: 1000% 1000%;
     -webkit-animation: backgroundChange 15s ease infinite;
     -moz-animation: backgroundChange 15s ease infinite;
     animation: backgroundChange 15s ease infinite;
+}
+
+main {
     height: auto;
     width: 100vw;
     display: flex;
@@ -76,7 +79,7 @@ main {
         }
     
         button {
-            background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
+            background: linear-gradient(90deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
             background-size: 1000% 1000%;
             -webkit-animation: backgroundChange 15s ease infinite;
             -moz-animation: backgroundChange 15s ease infinite;
@@ -89,6 +92,11 @@ main {
             border: none;
             border-radius: 5px;
             transition: all ease 0.3s;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 }
@@ -106,10 +114,10 @@ main {
                 }
             }
             button {
-                font-size: 1.4em;
+                font-size: 1.6em;
 
                 &:hover {
-                    color: #f84040;
+                    color: #e72f2f;
                     transform: scale(1.1);
             
                     &:before {
@@ -118,13 +126,10 @@ main {
                 }
         
                 &:active {
-                    color: #e63737;
+                    color: #d12020;
                     transform: scale(0.9);
                 }
-        
-                &:focus {
-                    outline: none;
-                }
+    
                 
                 &:before {
                     content: "";

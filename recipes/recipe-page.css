@@ -1,221 +1,221 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  color: black;
-  line-height: 1.6;
-  font-family: "Open Sans", sans-serif;
-}
-
-h1 {
-  font-size: 4em;
-}
-
-h2 {
-  font-size: 3.5em;
-}
-
-p {
-  font-size: 1em;
-}
-
-.title {
-  width: 100%;
-  padding: 1% 3%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-end;
-}
-.title p {
-  margin-left: 1%;
-  margin-bottom: 1.6%;
-}
-
-.content {
-  min-height: 800px;
-  width: 100%;
-  padding: 1% 3%;
-}
-
-.menu {
-  width: 100%;
-  padding: 0 3% 1% 3%;
-}
-.menu hr {
-  height: 3px;
-  background-color: black;
-}
-.menu nav {
-  width: inherit;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.menu nav a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  padding: 1%;
-  text-decoration: none;
-  color: black;
-}
-.menu nav a:hover {
-  cursor: pointer;
-}
-.menu nav #toggle {
-  cursor: pointer;
-  border: none;
-  background: white;
-  padding: 1%;
-}
-.menu nav #toggle:active {
-  background: transparent;
-}
-.menu nav #toggle:focus {
-  outline: none;
-}
-.menu nav .bars {
-  background: black;
-  display: inline-block;
-  position: relative;
-  height: 2px;
-  width: 18px;
-}
-.menu nav .bars:before, .menu nav .bars:after {
-  content: "";
-  background: black;
-  display: inline-block;
-  height: 2px;
-  width: 18px;
-  position: absolute;
-}
-.menu nav .bars:before {
-  top: 5px;
-  left: 0;
-}
-.menu nav .bars:after {
-  top: -5px;
-  left: 0;
-}
-
-footer {
-  background: black;
-  color: white;
-  width: 100%;
-  padding: 2%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-footer .foot-info img {
-  width: 50px;
-  float: left;
-  margin-right: 10px;
-}
-footer .foot-info .text {
-  float: right;
-}
-footer .foot-info .text .small {
-  font-size: 0.5em;
-}
-footer .links {
-  display: flex;
-  flex-direction: column;
-}
-footer .links a {
-  text-decoration: none;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  padding: 7px;
-}
-
-@media all and (min-width: 768px) {
-  .menu nav {
-    flex-direction: row;
-    justify-content: space-evenly;
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&family=Press+Start+2P&family=Ranchers&family=Shadows+Into+Light&family=Suwannaphum&display=swap");
+@keyframes textRotate {
+  0% {
+    transform: rotate(0deg);
   }
-  .menu nav a {
-    text-align: center;
-    display: block;
-    width: auto;
-    order: 1;
-    display: block;
+  25% {
+    transform: rotate(20deg);
   }
-  .menu nav a:active {
-    background-color: whitesmoke;
+  50% {
+    transform: rotate(100deg);
   }
-  .menu #toggle {
-    display: none;
+  75% {
+    transform: rotate(200deg);
   }
-
-  footer .info img {
-    margin-top: -20px;
+  100% {
+    transform: rotate(3600deg);
   }
 }
-@media all and (max-width: 767px) {
-  .title {
-    padding-top: 1%;
-    position: relative;
-    order: 2;
+@-webkit-keyframes textRotate {
+  0% {
+    transform: rotate(0deg);
   }
-  .title p {
-    margin-top: 5%;
-    width: 100%;
-    text-align: right;
+  25% {
+    transform: rotate(20deg);
   }
-
-  .menu {
-    order: 1;
-    position: relative;
-    transition: all 0.5s ease;
-    padding-bottom: 0;
+  50% {
+    transform: rotate(100deg);
   }
-  .menu nav {
-    margin-top: 2%;
-    margin-bottom: -1%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+  75% {
+    transform: rotate(200deg);
   }
-  .menu nav a {
-    margin-top: 2%;
-    width: 100%;
-    text-align: right;
-    order: 2;
-    display: none;
-    transition: all 0.3s ease;
+  100% {
+    transform: rotate(3600deg);
   }
-  .menu nav a:nth-child(1) {
-    margin-top: 5%;
+}
+@-moz-keyframes textRotate {
+  0% {
+    transform: rotate(0deg);
   }
-  .menu nav a:hover {
-    background-color: whitesmoke;
+  25% {
+    transform: rotate(20deg);
   }
-  .menu #toggle {
-    order: 1;
+  50% {
+    transform: rotate(100deg);
   }
-
-  main {
-    position: relative;
-    order: 3;
+  75% {
+    transform: rotate(200deg);
   }
-
-  footer {
-    position: relative;
-    order: 4;
+  100% {
+    transform: rotate(3600deg);
   }
-  footer .info img {
-    margin-top: 0px;
+}
+@keyframes textSkew {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  33% {
+    transform: skew(15deg, 15deg);
+  }
+  66% {
+    transform: skew(-10deg, -30deg);
+  }
+  100% {
+    transform: rotate(0deg, 0deg);
+  }
+}
+@-webkit-keyframes textSkew {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  33% {
+    transform: skew(15deg, 15deg);
+  }
+  66% {
+    transform: skew(-10deg, -30deg);
+  }
+  100% {
+    transform: rotate(0deg, 0deg);
+  }
+}
+@-moz-keyframes textSkew {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  33% {
+    transform: skew(15deg, 15deg);
+  }
+  66% {
+    transform: skew(-10deg, -30deg);
+  }
+  100% {
+    transform: rotate(0deg, 0deg);
+  }
+}
+@keyframes textMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(10px, 20px);
+  }
+  40% {
+    transform: translate(-30px, 40px);
+  }
+  60% {
+    transform: translate(60px, -70px);
+  }
+  80% {
+    transform: translate(-100px, -120px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-webkit-keyframes textMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(10px, 20px);
+  }
+  40% {
+    transform: translate(-30px, 40px);
+  }
+  60% {
+    transform: translate(60px, -70px);
+  }
+  80% {
+    transform: translate(-100px, -120px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-moz-keyframes textMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(10px, 20px);
+  }
+  40% {
+    transform: translate(-30px, 40px);
+  }
+  60% {
+    transform: translate(60px, -70px);
+  }
+  80% {
+    transform: translate(-100px, -120px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes textGrowth {
+  0% {
+    font-size: 1.3em;
+  }
+  50% {
+    font-size: 3.1em;
+  }
+  100% {
+    font-size: 1.3em;
+  }
+}
+@-webkit-keyframes textGrowth {
+  0% {
+    font-size: 1.3em;
+  }
+  50% {
+    font-size: 3.1em;
+  }
+  100% {
+    font-size: 1.3em;
+  }
+}
+@-moz-keyframes textGrowth {
+  0% {
+    font-size: 1.3em;
+  }
+  50% {
+    font-size: 3.1em;
+  }
+  100% {
+    font-size: 1.3em;
+  }
+}
+@-webkit-keyframes textRainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes textRainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes textRainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 body {
@@ -241,6 +241,56 @@ p {
 }
 .img-wrapper img {
   object-fit: contain;
+}
+
+.textMove {
+  animation: textMove 4s ease infinite;
+  -moz-animation: textMove 4s ease infinite;
+  -webkit-animation: textMove 4s ease infinite;
+}
+.textMove:nth-child(even) {
+  animation-delay: 2s;
+}
+
+.textRotate {
+  animation: textRotate 3s ease infinite;
+  -moz-animation: textRotate 3s ease infinite;
+  -webkit-animation: textRotate 3s ease infinite;
+}
+.textRotate:nth-child(odd) {
+  animation-delay: 0.7s;
+}
+
+.growth {
+  animation: textGrowth 3s ease infinite;
+  -webkit-animation: textGrowth 3s ease infinite;
+  -moz-animation: textGrowth 3s ease infinite;
+}
+
+.rainbow {
+  background: linear-gradient(270deg, #d92525, #d9ad25, #deec21, #6aec21, #25b6d7, #2538d7, #9f25d7, #d72591);
+  background-size: 1600% 1600%;
+  -webkit-animation: textRainbow 5s ease infinite;
+  -moz-animation: textRainbow 5s ease infinite;
+  animation: textRainbow 5s ease infinite;
+}
+
+#circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: black;
+  border: 10px solid black;
+}
+
+.skew {
+  -webkit-animation: textSkew 7s ease-out infinite;
+  -moz-animation: textSkew 7s ease-out infinite;
+  animation: textSkew 7s ease-out infinite;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
 }
 
 .info {
@@ -275,6 +325,13 @@ p {
 }
 .info .info-text .metadata .pod p {
   font-size: 0.9em;
+}
+.info .info-text .macfunky {
+  font-family: "Bangers", cursive;
+  background: orange;
+}
+.info .info-text .macfunky:nth-child(odd) {
+  font-size: 2em;
 }
 .info .info-text p {
   width: 100%;
