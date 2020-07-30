@@ -289,7 +289,6 @@ main h2 {
 main form {
   display: flex;
   flex-flow: column nowrap;
-  width: 80%;
   margin-top: 0;
   padding: 0 75px 50px 75px;
 }
@@ -322,6 +321,9 @@ main form .birthday #year {
 main form button {
   background: linear-gradient(270deg, #f3ef7d, #ecc31c, #67ec1c, #1cecc0, #ec1c88);
   background-size: 1000% 1000%;
+  -webkit-animation: backgroundChange 15s ease infinite;
+  -moz-animation: backgroundChange 15s ease infinite;
+  animation: backgroundChange 15s ease infinite;
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
@@ -332,9 +334,12 @@ main form button {
   transition: all ease 0.3s;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1025px) {
   main h2 {
     font-size: 2.8em;
+  }
+  main form {
+    width: 80%;
   }
   main form .name input {
     width: 49%;
@@ -369,9 +374,12 @@ main form button {
     transition: top 0.3s ease;
   }
 }
-@media all and (max-width: 1023px) {
+@media all and (max-width: 1024px) {
   main h2 {
     font-size: 2.3em;
+  }
+  main form {
+    width: 100%;
   }
   main form input {
     margin: 10px 0;
