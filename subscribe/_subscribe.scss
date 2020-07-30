@@ -57,6 +57,7 @@ body {
         animation: wave 2s ease-in-out infinite;
         animation-delay: calc(0.1s * var(--i));
         padding: 0 20px;
+        border-radius: 50%;
     }
 }
 
@@ -83,7 +84,7 @@ main {
         input {
             padding: 10px;
             border: solid grey 1px;
-            border-radius: 3px;
+            border-radius: 5px;
         }
     
         label {
