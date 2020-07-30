@@ -184,6 +184,14 @@ p {
     animation: bounce 2s infinite;
 }
 
+.flip {
+    animation: flip 1s infinite;
+}
+
+.bangers {
+    font-family: 'Bangers', serif;
+}
+
 .ranchers {
     font-family: 'Ranchers', cursive;
     font-size: 1.8em;
@@ -206,6 +214,7 @@ p {
 
 .info {
     background-color: #4fb9e2;
+    height: 100%;
 
     .info-text {
         width: 80%;
@@ -237,6 +246,10 @@ p {
 
                 p {
                     font-size: 0.9em;
+                }
+
+                &:nth-child(2) {
+                    animation-delay: 0.2s;
                 }
             }
         }
