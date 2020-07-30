@@ -137,15 +137,17 @@ footer .links {
 footer .links .links-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 150px;
 }
 footer .links .links-group a {
   text-decoration: none;
   color: white;
   font-family: "Open Sans", sans-serif;
-  padding: 7px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1025px) {
   .menu nav {
     flex-direction: row;
     justify-content: space-evenly;
@@ -170,11 +172,8 @@ footer .links .links-group a {
   footer .links {
     margin-left: 50%;
   }
-  footer .links .links-group {
-    padding-left: 20%;
-  }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 1024px) {
   .title {
     padding-top: 1%;
     position: relative;
@@ -234,9 +233,6 @@ footer .links .links-group a {
   }
   footer .links .links-group {
     margin: 0 auto;
-  }
-  footer .links .links-group:nth-child(2) {
-    margin-left: 30%;
   }
 }
 

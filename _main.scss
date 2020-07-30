@@ -154,19 +154,21 @@ footer {
         .links-group {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 150px;
 
             a {
                 text-decoration: none;
                 color: white;
                 font-family: "Open Sans", sans-serif;
-                padding: 7px;
             }
         }
     }
 }
 
 // desktop view
-@media all and (min-width: 768px) {
+@media all and (min-width: 1025px) {
     .menu {
         nav {
             flex-direction: row;
@@ -198,16 +200,12 @@ footer {
 
         .links {
             margin-left: 50%;
-
-            .links-group {
-                padding-left: 20%;
-            }
         }
     }
 }
 
 // mobile view
-@media all and (max-width: 767px) {
+@media all and (max-width: 1024px) {
     .title {
         padding-top: 1%;
         position: relative;
@@ -275,9 +273,6 @@ footer {
 
             .links-group {
                 margin: 0 auto;
-                &:nth-child(2) {
-                    margin-left: 30%;
-                }
             }
         }
     }
