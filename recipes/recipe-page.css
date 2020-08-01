@@ -185,6 +185,39 @@
     font-size: 1.3em;
   }
 }
+@keyframes imgGrowth {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes imgGrowth {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes imgGrowth {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @-webkit-keyframes textRainbow {
   0% {
     background-position: 0% 50%;
@@ -261,10 +294,16 @@ p {
   animation-delay: 0.7s;
 }
 
-.growth {
+.textGrowth {
   animation: textGrowth 3s ease infinite;
   -webkit-animation: textGrowth 3s ease infinite;
   -moz-animation: textGrowth 3s ease infinite;
+}
+
+.imgGrowth {
+  animation: imgGrowth 2s ease infinite;
+  -webkit-animation: imgGrowth 2s ease infinite;
+  -moz-animation: imgGrowth 2s ease infinite;
 }
 
 .rainbow {
