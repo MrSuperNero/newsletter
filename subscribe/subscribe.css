@@ -351,6 +351,9 @@ main form input {
   border: solid grey 1px;
   border-radius: 5px;
 }
+main form input:focus {
+  outline: none;
+}
 main form label {
   margin-top: 5%;
   font-weight: 600;
