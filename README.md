@@ -9,3 +9,4 @@ Big thank you to the following libraries/programs that helped make this website 
 - CSS Gradient Animator (https://www.gradient-animator.com/)
 - Typewriter JS (https://safi.me.uk/typewriterjs/)
 - Text wave animation (https://www.youtube.com/watch?v=m1ZKHPbnyjo)
+- Flickity (https://flickity.metafizzy.co/)
