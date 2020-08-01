@@ -66,12 +66,10 @@ p {
 .menu nav a {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  padding: 1%;
+  padding: 1% 10%;
   text-decoration: none;
   color: black;
-}
-.menu nav a:hover {
-  cursor: pointer;
+  transition: all 0.4s ease;
 }
 .menu nav #toggle {
   cursor: pointer;
@@ -159,8 +157,12 @@ footer .links .links-group a {
     order: 1;
     display: block;
   }
+  .menu nav a:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 1em #bbbbbb;
+  }
   .menu nav a:active {
-    background-color: whitesmoke;
+    box-shadow: 0px 0px transparent;
   }
   .menu #toggle {
     display: none;

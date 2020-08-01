@@ -69,13 +69,10 @@ p {
         a {
             font-family: "Open Sans", sans-serif;
             font-size: 1em;
-            padding: 1%;
+            padding: 1% 10%;
             text-decoration: none;
             color: black;
-        
-            &:hover {
-                cursor: pointer;
-            }
+            transition: all 0.4s ease;
         }
 
         #toggle {
@@ -180,8 +177,13 @@ footer {
                 order: 1;
                 display: block;
 
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0px 5px 1em #bbbbbb;
+                }
+    
                 &:active {
-                    background-color: whitesmoke;
+                    box-shadow: 0px 0px transparent;
                 }
             }
         }
