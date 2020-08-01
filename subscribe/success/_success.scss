@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "You Murderer";
+    src: url("youmurderer-bb/youmurdererbb_reg.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: black;
+
+    .content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        h1, a {
+            font-family: "You Murderer", serif;
+            color: red;
+        }
+        
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        .content {
+            h1 {
+                font-size: 5em;
+            }
+            a {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        .content {
+            h1 {
+                font-size: 3em;
+            }
+            a {
+                font-size: 0.5em;
+            }
+        }
+    }
+}

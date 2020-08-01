@@ -40,7 +40,7 @@
                     <span style="--i:11;">!</span>
                 </div>
                 You know you want to...</h2>
-            <form method="post" name="subscribers" netlify>
+            <form method="post" action="/subscribe/success/" name="subscribers" netlify>
                 <label for="name">Name</label>
                 <div class="name">
                     <input required type="text" name="first-name" placeholder="First Name, e.g. Dummy" id="first-name">
@@ -48,7 +48,7 @@
                 </div>
 
                 <label for="email">Email</label>
-                <input required type="email" name="email" placeholder="e.g. dummytramp@fakenews.gov">
+                <input required type="email" name="email" placeholder="e.g. dummytramp@fakenews.gov" id="email">
 
                 <label for="birthday">Birthday</label>
                 <div class="birthday">
@@ -161,13 +161,13 @@
                 </div>
 
                 <label for="street-name">Street Name</label>
-                <input type="text" name="street-name" placeholder="e.g. Lil Marco, King Khan, etc...">
+                <input type="text" name="street-name" placeholder="e.g. Lil Marco, King Khan, etc..." id="street-name">
 
                 <label for="mother">Mother's Maiden Name</label>
-                <input type="text" name="mother" placeholder="e.g. Johnson, Thunderblade, etc...">
+                <input type="text" name="mother" placeholder="e.g. Johnson, Thunderblade, etc..." id="mother">
 
                 <label for="pet">First Childhood Pet</label>
-                <input type="text" name="pet" placeholder="e.g. Muffy, Snuggles, Ted, etc...">
+                <input type="text" name="pet" placeholder="e.g. Muffy, Snuggles, Ted, etc..." id="pet">
 
                 <button type="submit">Sell Your Soul</button>
             </form>
