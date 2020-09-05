@@ -6,6 +6,8 @@ Made this website as my final project for Art167: Intro to Interactive Web Desig
 This website is supposed to be attractive on the surface level, but as you travel down the rabbit hole,
 you realize how messed up this website really is. 
 
+Link: www.chpbttryfd.com 
+
 Have fun :)
 
 ## credits
