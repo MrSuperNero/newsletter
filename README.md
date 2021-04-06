@@ -1,7 +1,14 @@
 # chpbttryfd
-Newsletter website for chpbttryfd (Cheap Buttery Food)
+Newsletter website for chpbttryfd (Cheap Buttery Food).
+
+Made this website as my final project for Art167: Intro to Interactive Web Design at Yale University, taught by Matt Wolff.
+
 This website is supposed to be attractive on the surface level, but as you travel down the rabbit hole,
-you realize how messed up this website really is. Have fun :)
+you realize how messed up this website really is. 
+
+Link: www.chpbttryfd.com 
+
+Have fun :)
 
 ## credits
 Big thank you to the following libraries/programs that helped make this website possible
